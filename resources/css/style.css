@@ -1,0 +1,197 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Advanced Pixel 7";
+  src: url("../fonts/advanced-pixel-7.regular.ttf") format(TrueType);
+}
+
+@font-face {
+  font-family: "VP Pixel Simplified";
+  src: url("../fonts/vp-pixel.simplified-demo.otf") format(OpenType);
+}
+
+/* STILI GLOBALI */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8e9e5;
+  font-family: "VP Pixel Simplified";
+  color: #253657;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 380px;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Advanced Pixel 7", monospace;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+a {
+  color: #253657;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 0 0 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: square;
+  margin-left: 25px;
+}
+
+section {
+  border: 2px solid #253657;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #f5a1a1;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+section:hover {
+  box-shadow: 10px 10px #a69aca;
+}
+
+/* COLORS */
+
+.color {
+  height: 50px;
+  width: 70%;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: 2px solid #253657;
+  border-radius: 3px;
+}
+
+.color:hover {
+  position: relative;
+  left: 5px;
+}
+
+#light {
+  background-color: #f8e9e5;
+}
+
+#dark {
+  background-color: #253657;
+  color: #f8e9e5;
+}
+
+#second {
+  background-color: #a69aca;
+}
+
+/* FONTS */
+
+span {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.left,
+.right {
+  height: 350px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 50px;
+  padding: 20px;
+  background-color: #f8e9e5;
+  text-align: center;
+  border: 2px solid #253657;
+  border-radius: 3px;
+}
+
+.left:hover,
+.right:hover {
+  position: relative;
+  bottom: 5px;
+}
+
+.left {
+  font-family: "Advanced Pixel 7", monospace;
+}
+
+.left span {
+  font-size: 130px;
+}
+
+.left h3 {
+  font-size: 35px;
+}
+
+.left p {
+  font-size: 28px;
+}
+
+.text-styles {
+  margin-top: 50px;
+}
+
+.text-styles ul li {
+  margin: 25px 0;
+}
+
+.rulesets {
+  width: 300px;
+  padding: 10px;
+  background-color: #a69aca;
+  border: 2px solid #253657;
+  border-radius: 3px;
+}
+
+/* MIGLIORIE */
+
+.improvements {
+  width: 50%;
+  margin: 25px auto;
+  background-color: #a69aca;
+  transition: all 0.5s;
+}
+
+.improvements:hover {
+  box-shadow: 10px 10px #f5a1a1;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+}
