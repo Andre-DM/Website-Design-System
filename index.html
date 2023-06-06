@@ -11,122 +11,153 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>Website Style Guide</h1>
-            <p>Welcome to my style guide! <br>
-                This site will be updated as I progress through the course, adding new sections and applying some
-                improvements. I hope you like the result and, if you want, you can leave me a feedback in the <a
-                    href="https://discuss.codecademy.com/t/build-a-website-style-guide-challenge-project-html-css/462395/1006?u=shivian"
-                    target="_blank">dedicated post</a> in the Codecademy forum, or you can find me in the Discord
-                server!</p>
-        </header>
 
-        <!-- Colors -->
+        <!-- Nav -->
 
-        <section>
-            <h2>Colors</h2>
+        <nav class="nav-left">
             <ul>
                 <li>
-                    <p class="color" id="light">Light - #F8E9E5</p>
+                    <p><a href="#colors">Colors</a></p>
                 </li>
                 <li>
-                    <p class="color" id="dark">Dark - #253657</p>
+                    <p><a href="#typography">Fonts</a></p>
                 </li>
                 <li>
-                    <p class="color">First - #F5A1A1</p>
+                    <p><a href="#buttons">Buttons</a></p>
                 </li>
                 <li>
-                    <p class="color" id="second">Second - #A69ACA</p>
+                    <p><a href="#improvements">Improvements</a></p>
                 </li>
             </ul>
-        </section>
+        </nav>
 
-        <!-- Fonts -->
+        <!-- Header -->
 
-        <section>
-            <h2>Fonts</h2>
-            <a href="https://www.1001fonts.com/advanced-pixel-7-font.html" target="_blank">
-                <div class="left">
-                    <span>aA</span>
-                    <h3>Advanced Pixel 7</h3>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>0123456789¡!$%&/()=?;: ¡“”@\</p>
-                </div></a>
-            <a href="https://www.1001fonts.com/vp-pixel-font.html" target="_blank">
-                <div class="right">
-                    <span>aA</span>
-                    <h3>VP Pixel Simplified</h3>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                    <p>0123456789¡!$%&/()=?;: ¡“”@\</p>
-                </div>
-            </a>
-            <div class="text-styles">
-                <h3>Text Styles</h3>
+        <div class="main-right">
+            <header>
+                <h1>Website Style Guide</h1>
+                <p>Welcome to my style guide! <br>
+                    This site will be updated as I progress through the course, adding new sections and applying some
+                    improvements. I hope you like the result and, if you want, you can leave me a feedback in the <a
+                        href="https://discuss.codecademy.com/t/build-a-website-style-guide-challenge-project-html-css/462395/1006?u=shivian"
+                        target="_blank">dedicated post</a> in the Codecademy forum, or you can find me in the Discord
+                    server!</p>
+            </header>
+
+            <!-- Colors -->
+
+            <section id="colors">
+                <h2>Colors</h2>
                 <ul>
                     <li>
-                        <div>
-                            <h1>Heading 1 - Hey! Listen!</h1>
-                            <div class="rulesets">
-                                <p>font-family: 'Advanced Pixel 7'</p>
-                                <p>font-size: 80px</p>
-                                <p>font-weight: 400</p>
-                            </div>
-                        </div>
+                        <p class="color" id="light">Light - hsl(41, 65%, 90%)</p>
                     </li>
                     <li>
-                        <div>
-                            <h2>Heading 2 - It's dangerous to go alone! Take this.</h2>
-                            <div class="rulesets">
-                                <p>font-family: 'VP Pixel Simplified'</p>
-                                <p>font-size: 35px</p>
-                            </div>
-                        </div>
+                        <p class="color" id="dark">Dark - hsl(206, 15%, 20%)</p>
                     </li>
                     <li>
-                        <div>
-                            <h3 style="margin-bottom: 25px;">Heading 3 - It's dangerous to go alone! Take this.</h3>
-                            <div class="rulesets">
-                                <p>font-family: 'VP Pixel Simplified'</p>
-                                <p>font-size: 25px</p>
-                            </div>
-                        </div>
+                        <p class="color" id="first">First - hsl(177, 25%, 60%)</p>
                     </li>
                     <li>
-                        <div>
-                            <p style="margin-bottom: 25px;">Paragraph - It's dangerous to go alone! Take this.</p>
-                            <div class="rulesets">
-                                <p>font-family: 'VP Pixel Simplified'</p>
-                                <p>font-size: 20px</p>
-                            </div>
-                        </div>
+                        <p class="color" id="second">Second - hsl(29, 70%, 70%)</p>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
 
-        <!-- MIGLIORIE -->
+            <!-- Fonts -->
 
-        <section class="improvements">
-            <h2>Improvements</h2>
-            <ol>
-                <li>
-                    <p>Add a navigation for future topics</p>
-                </li>
-                <li>
-                    <p>Make a better layout with Flexbox and Grid</p>
-                </li>
-                <li>
-                    <p>Dark Mode! (When I'll learn JavaScript...)</p>
-                </li>
-            </ol>
-        </section>
+            <section id="typography">
+                <h2>Typography</h2>
 
-        <footer>
-            <p>Coded by: Andrea Di Matteo | <a href="https://www.codecademy.com/profiles/Shivian_">Codecademy
-                    Profile</a> | <a href="https://github.com/Andre-DM" target="_blank">GitHub</a></p>
-        </footer>
+                <div class="text-styles">
+                    <h3>Titles & Headings</h3>
+                    <ul>
+                        <li>
+                            <h1>H1 - Listen to my story.</h1>
+                        </li>
+                        <li>
+                            <h2>H2 - Listen to my story.</h2>
+                        </li>
+                        <li>
+                            <h3>H3 - Listen to my story.</h3>
+                        </li>
+                    </ul>
+                    <h3>Body Text</h3>
+                    <p>Why do you build, knowing destruction is inevitable? Why do you yearn to live, knowing all things
+                        must die? Knowing that none of it will have meant anything once you do? Life. Dreams. Hope.
+                        Where do they come from? Where do they go? Such meaningless things...</p>
+                    <a href="#">
+                        <p>Hyperlink</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Rulesets -->
+
+            <section id="rulesets">
+                <h2>Rulesets</h2>
+                <div class="ruleset">
+                    <h1>Heading 1</h1>
+                    <hr>
+                    <p>font-family: 'Advanced Pixel 7'</p>
+                    <p>font-size: 4.5rem</p>
+                    <p>font-weight: 400</p>
+                </div>
+                <div class="ruleset">
+                    <h2>Heading 2</h2>
+                    <hr>
+                    <p>font-family: 'VP Pixel Simplified'</p>
+                    <p>font-size: 2rem</p>
+                </div>
+                <div class="ruleset">
+                    <h3>Heading 3</h3>
+                    <hr>
+                    <p>font-family: 'VP Pixel Simplified'</p>
+                    <p>font-size: 1.6rem</p>
+                </div>
+                <div class="ruleset">
+                    <p>Paragraph</p>
+                    <hr>
+                    <p>font-family: 'VP Pixel Simplified'</p>
+                    <p>font-size: 1.3rem</p>
+                    <p>letter-spacing: 1px</p>
+                </div>
+            </section>
+
+            <!-- Buttons -->
+
+            <section id="buttons">
+                <h2>Buttons</h2>
+                <div class="button-wrapper">
+                    <button class="primary-btn">Primary</button>
+                    <button class="secondary-btn">Secondary</button>
+                    <button class="disabled-btn">Disabled</button>
+                    <button class="hover-btn">Hover</button>
+                </div>
+            </section>
+
+            <!-- Improvements -->
+
+            <section id="improvements">
+                <h2>Improvements</h2>
+                <ol>
+                    <li>
+                        <p>Add more topics (Spacing, Grids, Forms)</p>
+                    </li>
+                    <li>
+                        <p>Dark Mode! (When I'll learn JavaScript...)</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Footer -->
+
+            <footer>
+                <span>Coded by: Andrea Di Matteo | <a href="https://www.codecademy.com/profiles/Shivian_">Codecademy
+                        Profile</a> | <a href="https://github.com/Andre-DM" target="_blank">GitHub</a></span>
+            </footer>
+        </div>
+
     </div>
 </body>
 

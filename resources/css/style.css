@@ -1,4 +1,12 @@
-/* FONTS */
+:root {
+  --light: hsl(41, 65%, 90%);
+  --dark: hsl(206, 15%, 20%);
+  --primary: hsl(177, 25%, 60%);
+  --secondary: hsl(29, 70%, 70%);
+  --button: hsl(350, 75%, 65%);
+}
+
+/* ===== FONTS ===== */
 
 @font-face {
   font-family: "Advanced Pixel 7";
@@ -10,7 +18,7 @@
   src: url("../fonts/vp-pixel.simplified-demo.otf") format(OpenType);
 }
 
-/* STILI GLOBALI */
+/* =====  GLOBAL STYLES ===== */
 
 * {
   margin: 0;
@@ -19,42 +27,52 @@
 }
 
 body {
-  background-color: #f8e9e5;
-  font-family: "VP Pixel Simplified";
-  color: #253657;
+  background-color: var(--light);
+  font-family: "VP Pixel Simplified", monospace;
+  color: var(--dark);
+  font-size: 1.2rem;
 }
 
 .container {
-  margin: 0 auto;
-  width: 50%;
-  min-width: 380px;
+  width: 90%;
+  overflow: auto;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
 }
 
-header {
+.nav-left {
+  display: none;
+}
+
+.main-right {
   width: 100%;
-  margin: 0 auto;
-  padding: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1 {
   font-family: "Advanced Pixel 7", monospace;
-  font-size: 80px;
+  font-size: 4.5rem;
   font-weight: 400;
-  margin-bottom: 16px;
-}
-
-a {
-  color: #253657;
-}
-
-p {
-  font-size: 20px;
 }
 
 h2 {
-  font-size: 35px;
-  margin: 0 0 25px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+a {
+  color: var(--dark);
 }
 
 ul {
@@ -63,31 +81,55 @@ ul {
 
 ol {
   list-style: square;
-  margin-left: 25px;
 }
 
 section {
-  border: 2px solid #253657;
-  width: 100%;
-  margin-bottom: 40px;
-  padding: 25px;
-  background-color: #f5a1a1;
+  padding: 1.5rem;
+  border: 3px solid var(--dark);
   border-radius: 3px;
+}
+
+/* ===== HEADER ====== */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header p {
+  max-width: 600px;
+}
+
+/* ===== NAV ===== */
+
+/* SEE MEDIA QUERIES  */
+
+/* ===== COLORS ===== */
+
+#colors {
+  width: 100%;
+  background-color: var(--primary);
   transition: all 0.5s;
 }
 
-section:hover {
-  box-shadow: 10px 10px #a69aca;
+#colors:hover,
+#typography:hover,
+#buttons:hover {
+  box-shadow: 10px 10px var(--secondary);
 }
 
-/* COLORS */
-
 .color {
-  height: 50px;
-  width: 70%;
-  margin-bottom: 25px;
-  padding: 10px;
-  border: 2px solid #253657;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  letter-spacing: 0.05rem;
+  border: 2px solid var(--dark);
   border-radius: 3px;
 }
 
@@ -97,101 +139,187 @@ section:hover {
 }
 
 #light {
-  background-color: #f8e9e5;
+  background-color: var(--light);
 }
 
 #dark {
-  background-color: #253657;
-  color: #f8e9e5;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+#first {
+  background-color: var(--primary);
 }
 
 #second {
-  background-color: #a69aca;
+  background-color: var(--secondary);
 }
 
-/* FONTS */
+/* ===== TYPOGRAPHY ===== */
 
-span {
-  font-size: 100px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-.left,
-.right {
-  height: 350px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 50px;
-  padding: 20px;
-  background-color: #f8e9e5;
-  text-align: center;
-  border: 2px solid #253657;
-  border-radius: 3px;
-}
-
-.left:hover,
-.right:hover {
-  position: relative;
-  bottom: 5px;
-}
-
-.left {
-  font-family: "Advanced Pixel 7", monospace;
-}
-
-.left span {
-  font-size: 130px;
-}
-
-.left h3 {
-  font-size: 35px;
-}
-
-.left p {
-  font-size: 28px;
-}
-
-.text-styles {
-  margin-top: 50px;
-}
-
-.text-styles ul li {
-  margin: 25px 0;
-}
-
-.rulesets {
-  width: 300px;
-  padding: 10px;
-  background-color: #a69aca;
-  border: 2px solid #253657;
-  border-radius: 3px;
-}
-
-/* MIGLIORIE */
-
-.improvements {
-  width: 50%;
-  margin: 25px auto;
-  background-color: #a69aca;
+#typography {
+  background-color: var(--primary);
   transition: all 0.5s;
 }
 
-.improvements:hover {
-  box-shadow: 10px 10px #f5a1a1;
+.text-styles {
+  margin-top: 2rem;
 }
 
-/* FOOTER */
+.text-styles ul {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-left: 2px solid var(--dark);
+  padding-left: 1rem;
+}
+
+.text-styles p {
+  margin-top: 1rem;
+}
+
+.text-styles a {
+  margin-block: 2rem;
+}
+
+/* ===== RULESETS ===== */
+
+#rulesets {
+  background-color: var(--secondary);
+  transition: all 0.5s;
+}
+
+#rulesets:hover,
+#improvements:hover {
+  box-shadow: 10px 10px var(--primary);
+}
+
+hr {
+  border: 1px solid var(--dark);
+  width: 60%;
+  margin-block: 0.5rem;
+}
+
+.ruleset {
+  margin-top: 1.5rem;
+}
+
+/* ===== BUTTONS ===== */
+
+#buttons {
+  background-color: var(--primary);
+  transition: all 0.5s;
+}
+
+.button-wrapper {
+  margin-top: 1.5rem;
+}
+
+button {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  width: 150px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 2px solid var(--dark);
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: var(--secondary);
+}
+
+.disabled-btn {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.hover-btn {
+  background-color: var(--light);
+  box-shadow: 5px 5px var(--dark);
+}
+
+/* ===== IMPROVEMENTS ===== */
+
+#improvements {
+  background-color: var(--secondary);
+}
+
+#improvements ol {
+  margin-top: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+#improvements ol li {
+  margin-block: 0.8rem;
+}
+
+/* ===== FOOTER ===== */
 
 footer {
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 16px;
   text-align: center;
+  margin-top: 2rem;
 }
 
-footer p {
-  font-size: 16px;
+/* ===== MEDIA QUERIES ===== */
+
+@media only screen and (min-width: 800px) {
+  .container {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    padding-left: 0;
+    margin: 1rem;
+  }
+
+  .nav-left {
+    display: block;
+    align-self: flex-start;
+    position: fixed;
+    top: 1rem;
+    background-color: var(--secondary);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 3px solid var(--dark);
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+
+  .main-right {
+    margin-left: 220px;
+  }
+
+  nav:hover {
+    box-shadow: 10px 10px var(--primary);
+  }
+
+  nav li {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .main-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header {
+    grid-column: span 2;
+  }
+
+  #colors {
+    grid-column: span 2;
+  }
+
+  footer {
+    grid-column: span 2;
+  }
 }
